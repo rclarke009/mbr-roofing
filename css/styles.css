@@ -1,0 +1,71 @@
+body { font-family: 'Arial', sans-serif; color: #333; }
+.text-primary { color: #007bff !important; }
+.btn-primary { background-color: #007bff; border-color: #007bff; }
+.btn-primary:hover { background-color: #0056b3; }
+.hero { padding: 3rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+@media (max-width: 767px) { .hero { padding: 2rem; } } Mobile adjustments
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #ffffff;
+}
+.text-primary {
+    color: #007bff !important;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.hero {
+    padding: 3rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    background-color: #f8f9fa; /* Light gray fallback for mobile */
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3); /* Semi-transparent overlay for text readability */
+    z-index: 1;
+}
+.hero h1, .hero p, .hero .btn {
+    position: relative;
+    z-index: 2;
+}
+@media (min-width: 768px) {
+    .hero {
+        background-image: url('/mbr-roofing/images/roof-hero.jpg'); /* Placeholder roof image */
+        background-size: cover;
+        background-position: center;
+        color: #fff; /* White text for contrast on large screens */
+        padding: 5rem;
+    }
+    .hero h1, .hero p {
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Shadow for text readability */
+    }
+}
+@media (max-width: 767px) {
+    .hero {
+        padding: 2rem;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+}
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
