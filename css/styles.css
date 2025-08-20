@@ -49,9 +49,9 @@ body {
     margin-bottom: 1.5rem;
 }
 .card-img-top {
-    max-width: 100px; /* Keep images small for minimalism */
-    margin: 0 auto; /* Center the image */
-    display: block; /* Ensure proper centering */
+    width: 100%; /* Span full card width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills the space without distortion */
 }
 .card {
     border: none;
