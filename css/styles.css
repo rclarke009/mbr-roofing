@@ -24,11 +24,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Optional dark overlay for contrast (keep text readable if added later) */
-.hero-bleed__overlay {
-    min-height: inherit;
-    background: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0));
-}
+
 
 /* Mobile can be shorter */
 @media (max-width: 767px) {
