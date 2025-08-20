@@ -18,7 +18,7 @@ body {
 /* Remove the translate/left hacks as suggested */
 .hero-bleed {
     min-height: 50vh;                       /* Taller on desktops */
-    background-image: url('/images/roof-hero.jpg'); /* Relative path for local testing */
+    background-image: url('../images/roof-hero.jpg'); /* Relative path for local testing */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
