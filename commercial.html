@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reliable, quality shingle, tile, and metal commercial roofing in Orlando and Seminole, Central Florida.">
+    <title>Commercial Roofing - MBR Roofing | Central Florida</title>
+    <!-- Bootstrap 5.3 CDN for responsiveness -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS for white bg, blue highlights, and gallery -->
+    <style>
+        body { background-color: #ffffff; color: #333; }
+        .navbar { background-color: #ffffff; border-bottom: 1px solid #007bff; }
+        a { color: #007bff; }
+        .btn-primary { 
+            background-color: #007bff; 
+            border-color: #007bff; 
+            color: #ffffff; 
+        }
+        .btn-primary:hover { 
+            background-color: #0056b3; 
+            border-color: #004085; 
+            color: #ffffff; 
+        }
+        .card { border: 1px solid #007bff; }
+        footer { background-color: #f8f9fa; border-top: 1px solid #007bff; }
+        .gallery-thumb {
+            max-width: 120px; /* Reduced for tighter fit */
+            max-height: 80px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        #heroImage {
+            max-height: 500px;
+            width: 100vw;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+        #heroImage.fade { opacity: 0; }
+        .hero-section { margin: 0; padding: 0; }
+        .gallery-row { margin-top: 16px; }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/mbr-roofing-logo.png" alt="MBR Roofing Logo - Central Florida Roofing Experts" height="40" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="commercial.html" aria-current="page">Commercial Roofing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="residential.html">Residential Roofing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="barrel-tile.html">Barrel Roof Tile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Roof Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Full-Width Hero Image -->
+        <div class="hero-section">
+            <img src="images/commercial-warehouse-roof-orange.jpg" alt="Commercial metal roof project in Orlando, Central Florida" class="img-fluid" id="heroImage" loading="lazy">
+        </div>
+        
+        <!-- Thumbnail Gallery Directly Beneath -->
+        <div class="container">
+            <div class="row gallery-row justify-content-center gx-1">
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/commercial-roofing-orange.jpg" alt="Shingle roof repair in Orlando, Central Florida" class="img-thumbnail gallery-thumb" data-fullsrc="images/commercial-roofing-orange.jpg" loading="lazy">
+                </div>
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/commercial-roofing-seminole.jpg" alt="Tile roof installation for mid-sized business in Seminole" class="img-thumbnail gallery-thumb" data-fullsrc="images/commercial-roofing-seminole.jpg" loading="lazy">
+                </div>
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/commercial-warehouse-roof-orange.jpg" alt="Metal roof for commercial property in Orlando" class="img-thumbnail gallery-thumb" data-fullsrc="images/commerical-apartment-roof.jpg" loading="lazy">
+                </div>
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/commercial-post-67-new-roof.jpg" alt="Shingle roof replacement in Seminole" class="img-thumbnail gallery-thumb" data-fullsrc="images/commercial-post-67-new-roof.jpg" loading="lazy">
+                </div>
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/commerical-apartment-roof.jpg" alt="Metal roof installation in Seminole, Central Florida" class="img-thumbnail gallery-thumb" data-fullsrc="images/commerical-apartment-roof.jpg" loading="lazy">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content and CTA -->
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Reliable Commercial Roofing in Central Florida</h1>
+            <p>Specializing in shingle, tile, and metal roofs for businesses in Orlando and Seminole. From repairs to full installations, we deliver on time and on budget.</p>
+            <ul>
+                <li>Energy-efficient materials for lower costs</li>
+                <li>Quick turnaround for minimal disruption</li>
+            </ul>
+            <div class="text-center">
+                <a href="contact.html" class="btn btn-primary btn-lg">Request a Commercial Estimate Now!</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer with Contact Info -->
+    <footer class="py-4 text-center border-top">
+        <div class="container">
+            <p><i class="fas fa-phone me-2"></i>(407) 205-8367 | <i class="fas fa-envelope me-2"></i>info@mbr-roofing.com</p>
+            <p>&copy; 2025 MBR Roofing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN (for nav toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Gallery Swap Script -->
+    <script>
+        document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const hero = document.getElementById('heroImage');
+                hero.classList.add('fade');
+                setTimeout(() => {
+                    hero.src = thumb.dataset.fullsrc;
+                    hero.alt = thumb.alt;
+                    hero.classList.remove('fade');
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
