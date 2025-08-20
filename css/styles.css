@@ -18,7 +18,7 @@ body {
 /* Remove the translate/left hacks as suggested */
 .hero-bleed {
     min-height: 50vh;                       /* Taller on desktops */
-    background-image: url('/mbr-roofing/images/roof-hero.jpg'); /* Relative path for local testing */
+    background-image: url('/images/roof-hero.jpg'); /* Relative path for local testing */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,6 +51,11 @@ body {
 .welcome .lead {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
+}
+.card-img-top {
+    max-width: 100px; /* Keep images small for minimalism */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure proper centering */
 }
 .card {
     border: none;
