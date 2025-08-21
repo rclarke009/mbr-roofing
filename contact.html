@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Reliable, quality shingle, tile, and metal commercial roofing in Orlando and Seminole, Central Florida.">
-    <title>Commercial Roofing - MBR Roofing | Central Florida</title>
+<meta name="description" content="Contact MBR Roofing for shingle, tile, metal, and custom roof services in Orlando and Seminole, Central Florida.">    <title>Contact MBR Roofing - Central Florida Roofing Experts</title>
     <!-- Bootstrap 5.3 CDN for responsiveness -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom CSS for white bg, blue highlights, and gallery -->
@@ -41,9 +40,11 @@
         #heroImage.fade { opacity: 0; }
         .hero-section { margin: 0; padding: 0; }
         .gallery-row { margin-top: 16px; }
+        /* Honeypot for spam (hidden) */
+        .honeypot { position: absolute; left: -9999px; }
     </style>
 </head>
-<body class="bg-white">
+<body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -68,50 +69,56 @@
 
     <!-- Main Content Section -->
     <main>
-        <!-- Full-Width Hero Image -->
-        <div class="hero-section">
-            <img src="images/commercial-warehouse-roof-orange.jpg" alt="Commercial metal roof project in Orlando, Central Florida" class="img-fluid" id="heroImage" loading="lazy">
-        </div>
-        
-        <!-- Thumbnail Gallery Directly Beneath -->
         <div class="container">
-            <div class="row gallery-row justify-content-center gx-1">
-                <div class="col-lg-2 col-6 mb-3">
-                    <img src="images/commercial-roofing-orange.jpg" alt="Shingle roof repair in Orlando, Central Florida" class="img-thumbnail gallery-thumb" data-fullsrc="images/commercial-roofing-orange.jpg" loading="lazy">
-                </div>
-                <div class="col-lg-2 col-6 mb-3">
-                    <img src="images/commercial-roofing-seminole.jpg" alt="Tile roof installation for business in Seminole" class="img-thumbnail gallery-thumb" data-fullsrc="images/commercial-roofing-seminole.jpg" loading="lazy">
-                </div>
-                <div class="col-lg-2 col-6 mb-3">
-                    <img src="images/commercial-warehouse-roof-orange.jpg" alt="Metal roof for commercial property in Orlando" class="img-thumbnail gallery-thumb" data-fullsrc="images/commerical-apartment-roof.jpg" loading="lazy">
-                </div>
-                <div class="col-lg-2 col-6 mb-3">
-                    <img src="images/commercial-post-67-new-roof.jpg" alt="Shingle roof replacement in Seminole" class="img-thumbnail gallery-thumb" data-fullsrc="images/commercial-post-67-new-roof.jpg" loading="lazy">
-                </div>
-                <div class="col-lg-2 col-6 mb-3">
-                    <img src="images/commerical-apartment-roof.jpg" alt="Metal roof installation in Seminole, Central Florida" class="img-thumbnail gallery-thumb" data-fullsrc="images/commerical-apartment-roof.jpg" loading="lazy">
-                </div>
-            </div>
+        <h1 class="blue-text text-center mb-4">Contact MBR Roofing</h1>
+        <p class="text-center">We're Central Florida's experts in top quality roofing solutions for homes and businesses in Orlando, Seminole, and surrounding areas. Reach out for a free quote!</p>
+        
+        <!-- Contact Info (add to footer/header on all pages too) -->
+        <div class="text-center mb-4">
+            <p><strong>Email:</strong> info@mbr-roofing.com</p>
+            <p><strong>Phone: <a id="phone-obf" href="#" class="text-primary fw-bold" rel="nofollow"></a></p>
         </div>
         
-        <!-- Content and CTA -->
-        <div class="container my-5">
-            <h1 class="text-center mb-4">Reliable Commercial Roofing in Central Florida</h1>
-            <p>Specializing in shingle, tile, and metal roofs for businesses in Orlando and Seminole. From repairs to full installations, we deliver on time and on budget.</p>
-            <ul>
-                <li>Energy-efficient materials for lower costs</li>
-                <li>Quick turnaround for minimal disruption</li>
-            </ul>
-            <div class="text-center">
-                <a href="contact.html" class="btn btn-primary btn-lg">Request a Commercial Estimate Now!</a>
+        <!-- Formspree Form -->
+        <form action="https://formspree.io/f/mblknrwv" method="POST" class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label blue-text">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
             </div>
-        </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label blue-text">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="phone" class="form-label blue-text">Phone</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label blue-text">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <!-- Honeypot field for spam -->
+            <div class="honeypot">
+                <label for="website">Leave this blank if you're human</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+
+            
+
+
+        </form>
+        
+        <p class="text-center mt-4">We'll respond within 24-48 hours. For immediate needs, call (305) 825-4207.</p>
+    </div>
     </main>
 
     <!-- Footer with Contact Info -->
     <footer class="py-4 text-center border-top">
         <div class="container">
-            <p><i class="fas fa-phone me-2"></i>(407) 205-8367 | <i class="fas fa-envelope me-2"></i>info@mbr-roofing.com</p>
+            <p>Phone: <a id="phone-obf" href="#" class="text-primary fw-bold" rel="nofollow"></a></a> | <i class="fas fa-envelope me-2"></i>info@mbr-roofing.com</p>
             <p>&copy; 2025 MBR Roofing. All rights reserved.</p>
         </div>
     </footer>
@@ -120,6 +127,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Gallery Swap Script -->
     <script>
+        function decodeBase64(str) {
+            return atob(str);
+        }
+        const encoded = "KDQwNykgMjA1LTgzNjc"; // Your encoded string here
+        const phoneDisplay = decodeBase64(encoded);
+        const digitsOnly = phoneDisplay.replace(/\D+/g, "");
+        const telValue = digitsOnly.length === 10 ? `+1${digitsOnly}` : digitsOnly;
+        const link = document.getElementById("phone-obf");
+        link.textContent = phoneDisplay;
+        link.setAttribute("href", `tel:${telValue}`);
+        link.setAttribute("aria-label", `Call ${phoneDisplay}`);
+
+        function decodeBase64(str) {
+            try {
+                return atob(str);
+            } catch (e) {
+                console.warn('Decoding failed'); // Fallback silently
+                return ''; // Or display fallback text
+            }
+        }
         document.querySelectorAll('.gallery-thumb').forEach(thumb => {
             thumb.addEventListener('click', () => {
                 const hero = document.getElementById('heroImage');
@@ -132,5 +159,6 @@
             });
         });
     </script>
+    <noscript><p>Phone: <a href="/contact">Contact us</a></p></noscript>
 </body>
 </html>
