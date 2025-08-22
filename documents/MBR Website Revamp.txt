@@ -1,0 +1,141 @@
+MBR Revamp
+
+Project Overview
+
+Purpose: Revamp www.mbr-roofing.com to target Central Florida clients, focusing on basic roofing services (shingle, tile, metal, custom, specialty garden roofs), improve mobile responsiveness (especially iPhone), update outdated content, enhance SEO, and add contact info (email, phone, form).
+
+Scope: Update existing static HTML pages, fix broken links, optimize for SEO and accessibility, maintain white/blue design, no dynamic backend (static HTML only).
+
+Objectives: Increase lead generation, improve user experience across devices, reflect new company focus.
+
+
+User Requirements
+
+Target Audience: Homeowners and small businesses in Central Florida (e.g., Orlando, Seminole) needing quality roof services.
+
+Device Support: Fully responsive design for desktop (1024px+), tablet (768px-1024px), and mobile (320px-767px), with priority on iPhone fixes.
+
+Features:
+
+Contact section with email (info@mbr-roofing.com), phone ((305) 825-4207), and a contact form.
+Updated content removing old company references (e.g., Tennessee, South Florida) and emphasizing Central Florida.
+SEO-optimized pages with local keywords.
+Navigation and content accessible on all devices.
+
+
+
+
+Technical Requirements
+
+Platform: Static HTML/CSS, editable on your Mac with Visual Studio Code (free).
+Design: Retain white background (#ffffff) and blue highlights (#007bff), use Bootstrap 5.3 (free CDN) for responsiveness.
+Tools: FileZilla for uploads to GoDaddy, Git for version control (optional, free via GitHub).
+Performance: Optimize images (free TinyPNG), minify HTML/CSS (free online tools), ensure load time <3 seconds.
+SEO: Meta tags, schema markup, sitemap.xml (manual creation).
+
+
+Content Requirements
+
+Pages to Update: List provided below, with specific content and CTA updates.
+Tone: Professional yet approachable, targeting Central Florida homeowners.
+Keywords: “Central Florida roofing,” “Orlando shingle roof repair,” “Seminole tile roofing.”
+
+
+Testing and Deployment
+
+Testing: Manual checks on iPhone (Safari), tablet (Chrome), desktop (Firefox); validate links and forms.
+Deployment: Upload via FileZilla to GoDaddy, backup current site first.
+Maintenance: Monthly checks for broken links, quarterly content updates.
+
+
+Constraints and Assumptions
+
+Budget: $0 (DIY or husband-led), no WordPress due to security concerns.
+Timeline: 1-2 weeks, part-time (10-20 hours/week).
+Assumption: No broken links detected initially, but we’ll verify.
+
+Pages Identified on www.mbr-roofing.com
+Based on a review of the site (as accessible at 10:22 PM EDT, August 18, 2025):
+
+Homepage: Current intro with historical context, services teaser.
+Commercial Roofing: Details on commercial projects, outdated areas.
+Residential Roofing: Focus on residential services, broad scope.
+Barrel Roof Tile: Specific tile roof info, possibly outdated.
+Roof Gallery: Image gallery, may need Central Florida updates.
+Contact Us: Missing or incomplete (no form, email, phone visible).
+Notes: No sitemap or additional pages (e.g., About, Services) detected. Verify these during the audit, as some may be hidden or broken.
+
+Content and CTA Recommendations for Each Page
+
+Homepage
+
+Content: “MBR Roofing: Central Florida’s Trusted Choice for Mid-Sized Shingle, Tile, and Metal Roofs. Serving Orlando, Seminole, and surrounding areas with quality, affordable solutions since [year].”
+CTA: “Get a Free Quote Today – Contact Us!” (links to Contact Us page).
+Why: Centers on local focus and basic services, drives leads.
+
+
+Commercial Roofing
+
+Content: “Reliable commercial roofing in Central Florida. Specializing in mid-sized shingle, tile, and metal roofs for businesses in Orlando and Seminole.”
+CTA: “Request a Commercial Estimate Now!”
+Why: Narrows scope to basic services, encourages business inquiries.
+
+
+Residential Roofing
+
+Content: “Expert residential roofing for Central Florida homes. We excel at shingle, tile, and metal roofs for properties in Orlando and Seminole.”
+CTA: “Schedule Your Home Roof Check!”
+Why: Targets homeowners, promotes inspections as a lead magnet.
+
+
+Barrel Roof Tile
+
+Content: “Durable barrel tile roofing for Central Florida homes. Ideal for mid-sized properties in Orlando and Seminole—contact us for details.”
+CTA: “Learn More About Tile Options!”
+Why: Focuses on a specific offering, keeps it local and actionable.
+
+
+Roof Gallery
+
+Content: “View our Central Florida roofing projects—shingle, tile, and metal roofs for mid-sized homes in Orlando and Seminole.”
+CTA: “See Your Roof Potential – Get a Quote!”
+Why: Showcases work, drives quote requests.
+
+
+Contact Us
+
+Content: “Contact MBR Roofing for Central Florida services. Email: info@mbr-roofing.com, Phone: (305) 825-4207. Fill out our form for a quick response.”
+CTA: “Submit Your Inquiry Now!”
+Form Fields: Name, Email, Phone, Message.
+Why: Adds essential contact info, simplifies lead capture.
+
+
+
+What is Google Maps Integration for Central Florida Service Areas?
+
+Definition: Embedding a Google Maps iframe or static map on your site to display your service areas (e.g., Orlando, Seminole) and business location (if applicable). It helps clients visualize coverage and improves local SEO.
+How to Implement:
+
+Go to Google Maps, search “MBR Roofing Central Florida” or your address, click “Share” > “Embed a map,” and copy the iframe code (e.g., <iframe src="https://www.google.com/maps/embed?pb=..."></iframe>).
+Add to a new “Service Areas” page or homepage sidebar, styled with your blue highlights.
+
+
+Why: Free, enhances trust, and targets local searches (e.g., “roofing near Orlando”). Static HTML supports this with manual code insertion.
+
+Static HTML vs. Alternatives (Not WordPress)
+
+Static HTML Pros:
+
+Full control, no security update burden (your concern with WordPress).
+Editable on your Mac with VS Code, deployable via FileZilla to GoDaddy.
+Lightweight, fast for simple sites like yours.
+
+
+Cons: No dynamic features (e.g., form submissions need external services like Formspree).
+Alternatives:
+
+Jekyll (Static Site Generator): Free, Mac-compatible, generates static HTML from templates. Requires learning basic Ruby (1-2 hours), but avoids WordPress security issues. Hosting on Netlify (free) possible.
+Hugo: Another static generator, faster than Jekyll, Mac-friendly, free. Steeper learning curve but robust for SEO.
+
+
+Recommendation: Stick with static HTML for now. It meets your needs (responsiveness with Bootstrap, content updates), and you’re comfortable with FileZilla uploads. Consider Jekyll later if dynamic content (e.g., blog) is needed, but it’s not urgent.

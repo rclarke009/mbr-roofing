@@ -1,0 +1,41 @@
+### Step-by-Step Plan for Creating the New MBR Roofing Website
+
+As a team of top software developers and project managers, we're excited to guide you through building a new version of www.mbr-roofing.com from scratch. Drawing from 2025 best practices in web development—such as using HTML5 semantics for accessibility, CSS Grid and Flexbox for layouts (enhanced by Bootstrap 5.3 for rapid responsiveness), progressive enhancement for performance, and static site generation principles for security and speed—we'll focus on a clean, modern static HTML site. This approach aligns with your preference for avoiding WordPress, ensures low maintenance (no database or server-side vulnerabilities), and leverages free tools like Visual Studio Code (VS Code) on your Mac for editing, TinyPNG for image optimization, and FileZilla for deployment to GoDaddy.
+
+We'll maintain core content from the existing site (e.g., service descriptions, gallery images) where relevant, but improve it by emphasizing Central Florida (e.g., Orlando, Seminole), basic roofing services ( shingle, tile, metal, custom, specialty garden roofs), and adding modern elements like CTAs, SEO keywords, and a contact form (using a free external service like Formspree for submissions without a backend). The design will preserve the white background (#ffffff) with blue highlights (#007bff for accents like buttons and links), but modernize it with responsive layouts, subtle shadows (via CSS box-shadow), and icons from Font Awesome (free CDN).
+
+**Key Assumptions and Setup:**
+- Total timeline: 1-2 weeks part-time (10-20 hours/week), DIY on your Mac.
+- Tools: VS Code (free, with extensions like Live Server for previews and Prettier for code formatting), Bootstrap 5.3 (CDN), Font Awesome (CDN), Git (optional for version control via free GitHub repo).
+- Budget: $0, except potential $10-20 for premium Formspree if needed (free tier suffices for low traffic).
+- Pages: Homepage, Commercial Roofing, Residential Roofing, Barrel Roof Tile, Roof Gallery, Contact Us (based on your existing site).
+- Design Principles: Mobile-first (start with small screens), semantic HTML for SEO/accessibility (e.g., <header>, <main>, <footer>), and Core Web Vitals optimization (fast load times via minified code and compressed images).
+- SEO Integration: Include meta tags, schema markup (JSON-LD for local business), and keywords like "Central Florida roofing" naturally.
+- Contact Form: Use Formspree (free) to handle submissions via email without backend code.
+
+We'll provide the plan in phases, with design guidance including sample HTML/CSS code snippets. You can copy-paste these into VS Code to build each page. Create a folder structure like this on your Mac:
+- `mbr-roofing/` (root)
+  - `index.html` (Homepage)
+  - `commercial.html`
+  - `residential.html`
+  - `barrel-tile.html`
+  - `gallery.html`
+  - `contact.html`
+  - `css/` (folder for styles.css)
+  - `images/` (folder for optimized photos)
+  - `sitemap.xml` (for SEO)
+
+Start by downloading Bootstrap CSS/JS from getbootstrap.com (or use CDN) and Font Awesome from fontawesome.com.
+
+#### Phase 1: Setup and Base Template (1-2 Days, 4-6 Hours)
+**Goals:** Create a reusable template for all pages to ensure consistency.
+**Steps:**
+1. Install VS Code if not already (free from code.visualstudio.com). Add extensions: Live Server (for live previews), Bootstrap 5 Snippets.
+2. Create the root folder and base files.
+3. Build a base HTML template with navigation, header, footer, and Bootstrap integration. This will be copied for each page.
+
+**Design Guidance and Code:**
+- Layout: Fixed top navigation (hamburger on mobile), white background, blue accents on links/buttons.
+- Header: Logo (placeholder text or image) + nav.
+- Footer: Contact info, copyright, social links (if any).
+- Responsiveness: Bootstrap grid (rows/cols) for content sections.
