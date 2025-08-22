@@ -7,15 +7,15 @@ body {
     overflow-x: hidden; /* Prevent horizontal scroll from vw issues */
 }
 .text-primary {
-    color: #007bff !important;
+    color: #0256b9 !important;
 }
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #0256b9;
+    border-color: #0256b9;
 }
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #1a4a8f;
+    border-color: #1a4a8f;
 }
 /* Remove the translate/left hacks as suggested */
 .hero-bleed {
@@ -44,7 +44,7 @@ body {
     margin-top: -1rem; /* Negative margin to minimize gap with hero */
 }
 .welcome h1 {
-    color: #007bff;
+    color: #0256b9;
 }
 .welcome .lead {
     font-size: 1.25rem;
@@ -66,5 +66,40 @@ body {
 #phone-obf {
     user-select: none; /* Prevents text selection on desktop/mobile */
     -webkit-user-select: none; /* Safari/iPhone fallback */
-    color: #007bff; /* Your blue highlight */
+    color: #0256b9; /* Your blue highlight */
+}
+
+/* Outline button styling to match our new color scheme */
+.btn-outline-primary {
+    color: #0256b9;
+    border-color: #0256b9;
+}
+
+.btn-outline-primary:hover {
+    color: #ffffff;
+    background-color: #0256b9;
+    border-color: #0256b9;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    color: #ffffff;
+    background-color: #0256b9;
+    border-color: #0256b9;
+    box-shadow: 0 0 0 0.2rem rgba(2, 86, 185, 0.25);
+}
+
+/* All headings now use the new blue color */
+h1, h2, h3, h4, h5, h6 {
+    color: #0256b9;
+}
+
+/* Card titles specifically */
+.card-title {
+    color: #0256b9;
+}
+
+/* Blue text class for form labels and other elements */
+.blue-text {
+    color: #0256b9;
 }
