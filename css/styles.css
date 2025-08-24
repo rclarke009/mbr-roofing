@@ -20,7 +20,7 @@ body {
 /* Remove the translate/left hacks as suggested */
 .hero-bleed {
     min-height: 50vh;                       /* Taller on desktops */
-    background-image: url('../images/roof-hero.jpg'); /* Relative path for local testing */
+    background-image: url('../images/mbr-roofing-hero.jpg'); /* Relative path for local testing */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,4 +102,63 @@ h1, h2, h3, h4, h5, h6 {
 /* Blue text class for form labels and other elements */
 .blue-text {
     color: #0256b9;
+}
+
+/* Optimized Hero Image Styling for Better Image Quality */
+#heroImage {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    filter: contrast(1.05) saturate(1.1);
+    transition: opacity 0.3s ease;
+    /* Additional quality enhancements */
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enhanced hero section styling */
+.hero-section {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle shadow overlay for better text readability if needed */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.1) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Responsive hero heights */
+@media (max-width: 767px) {
+    #heroImage { 
+        max-height: 200px; 
+        image-rendering: auto; /* Better for mobile */
+    }
+}
+
+/* Gallery thumbnail optimization */
+.gallery-thumb {
+    max-width: 120px;
+    max-height: 80px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
