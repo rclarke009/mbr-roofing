@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roofing Gallery - MBR Roofing | Central Florida</title>
     <meta name="description" content="View our portfolio of roofing projects across Central Florida. Shingle, tile, metal, and commercial roofing installations. Quality workmanship on display.">
-    
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYDrLtI3ewX3C9ZOnJx0T9/xWxl6cH9tTX" crossorigin="anonymous">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <title>Roofing Gallery - MBR Roofing | Central Florida</title>
+    <!-- Bootstrap 5.3 CDN for responsiveness -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Main stylesheet for consistent styling -->
     <link rel="stylesheet" href="css/styles.css">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon.ico">
+    
+    <!-- Custom CSS for white bg, blue highlights, and gallery -->
     <style>
-        .gallery-item {
-            margin-bottom: 2rem;
-            transition: transform 0.3s ease;
+        body { background-color: #f8f9fa; color: #333; }
+        .navbar { background-color: #f8f9fa; border-bottom: 1px solid #0256b9; }
+        a { color: #0256b9; }
+        .btn-primary { 
+            background-color: #0256b9; 
+            border-color: #0256b9; 
+            color: #ffffff; 
         }
-        .gallery-item:hover {
-            transform: translateY(-5px);
+        .btn-primary:hover { 
+            background-color: #1a4a8f; 
+            border-color: #1a4a8f; 
+            color: #ffffff; 
         }
-        .gallery-image {
+        .card { border: 1px solid #0256b9; }
+        footer { background-color: #f8f9fa; border-top: 1px solid #0256b9; }
+        .gallery-thumb {
+            max-width: 120px; /* Reduced for tighter fit */
+            max-height: 80px;
             width: 100%;
-            height: 250px;
+            height: auto;
             object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
         }
-        .gallery-caption {
-            margin-top: 1rem;
-            text-align: center;
+        #heroImage {
+            max-height: 300px;
+            width: 100vw;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
         }
-        .category-filter {
-            margin-bottom: 2rem;
-        }
-        .filter-btn {
-            margin: 0.25rem;
+        #heroImage.fade { opacity: 0; }
+        .hero-section { margin: 0; padding: 0; }
+        .gallery-row { margin-top: 16px; }
+        
+        /* Responsive hero heights */
+        @media (max-width: 767px) {
+            #heroImage { max-height: 200px; }
         }
     </style>
 </head>
@@ -72,7 +88,6 @@
                     <li class="nav-item"><a class="nav-link" href="residential.html">Residential</a></li>
                     <li class="nav-item"><a class="nav-link active" href="gallery.html" aria-current="page">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="roofing-guides.html">Roofing Guides</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -81,133 +96,44 @@
 
     <!-- Main Content Section -->
     <main>
-        <!-- Page Header -->
+        <!-- Full-Width Hero Image -->
+        <div class="hero-section">
+            <img src="images/mbr-roofing-hero.png" alt="MBR Roofing portfolio showcase in Central Florida" class="img-fluid" id="heroImage" loading="lazy">
+        </div>
+        
+        <!-- Thumbnail Gallery Directly Beneath -->
+        <div class="container">
+            <div class="row gallery-row justify-content-center gx-1">
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/residential-dimensional-shingle-orlando-roofing.jpg" alt="Dimensional shingle roof in Orlando" class="img-thumbnail gallery-thumb" data-fullsrc="images/residential-dimensional-shingle-orlando-roofing.jpg" loading="lazy">
+                </div>
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/residential-dimensional-shingle-roof.jpg" alt="Tile roof project" class="img-thumbnail gallery-thumb" data-fullsrc="images/residential-dimensional-shingle-roof.jpg" loading="lazy">
+                </div>
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/commercial-roofing-orange.jpg" alt="Commercial roofing project" class="img-thumbnail gallery-thumb" data-fullsrc="images/commercial-roofing-orange.jpg" loading="lazy">
+                </div>
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/residential-roof-tile.jpg" alt="Metal roof installation" class="img-thumbnail gallery-thumb" data-fullsrc="images/residential-roof-tile.jpg" loading="lazy">
+                </div>
+                <div class="col-lg-2 col-6 mb-3">
+                    <img src="images/residential-handmade-barrel-tile.jpg" alt="Handmade barrel tile" class="img-thumbnail gallery-thumb" data-fullsrc="images/residential-handmade-barrel-tile.jpg" loading="lazy">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content and CTA -->
         <div class="container my-5">
             <h1 class="text-center mb-4">Our Roofing Portfolio</h1>
-            <p class="text-center lead">Browse through our completed projects showcasing quality workmanship across Central Florida</p>
-            
-            <!-- Category Filters -->
-            <div class="category-filter text-center">
-                <button class="btn btn-outline-primary filter-btn active" data-filter="all">All Projects</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="shingle">Shingle Roofs</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="tile">Tile Roofs</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="metal">Metal Roofs</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="commercial">Commercial</button>
-                <button class="btn btn-outline-primary filter-btn" data-filter="residential">Residential</button>
+            <p>Our quality work exceeds expectations across Central Florida. From residential shingle roofs to commercial metal installations, we showcase craftsmanship that stands the test of time. Every project reflects our commitment to excellence and attention to detail.</p>
+            <ul>
+                <li>Premium materials and expert installation</li>
+                <li>Comprehensive portfolio of completed projects</li>
+                <li>Proven track record across all roofing types</li>
+            </ul>
+            <div class="text-center">
+                <a href="contact.html" class="btn btn-primary btn-lg">View More of Our Work</a>
             </div>
-        </div>
-        
-        <!-- Gallery Grid -->
-        <div class="container">
-            <div class="row">
-                <!-- Shingle Roofs -->
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="shingle residential">
-                    <img src="images/residential-dimensional-shingle-orlando-roofing.jpg" alt="Dimensional shingle roof in Orlando" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Dimensional Shingle Roof</h5>
-                        <p>Orlando, FL - Premium architectural shingles</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="shingle residential">
-                    <img src="images/residential-dimensional-shingle-roof.jpg" alt="Shingle roof installation" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Architectural Shingle Installation</h5>
-                        <p>Central Florida - Energy-efficient shingle system</p>
-                    </div>
-                </div>
-                
-                <!-- Tile Roofs -->
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="tile residential">
-                    <img src="images/residential-tile-roof.jpg" alt="Tile roof project" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Concrete Tile Roof</h5>
-                        <p>Central Florida - Modern tile design</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="tile residential">
-                    <img src="images/residential-orlando-tile-roof.jpg" alt="Orlando tile roof" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Orlando Tile Roof</h5>
-                        <p>Orlando, FL - Premium tile installation</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="tile residential">
-                    <img src="images/residential-handmade-barrel-tile.jpg" alt="Handmade barrel tile" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Handmade Barrel Tile</h5>
-                        <p>Central Florida - Custom barrel tile work</p>
-                    </div>
-                </div>
-                
-                <!-- Metal Roofs -->
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="metal commercial">
-                    <img src="images/commercial-warehouse-roof-orange.jpg" alt="Commercial metal roof" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Commercial Metal Roof</h5>
-                        <p>Orange County - Warehouse roofing system</p>
-                    </div>
-                </div>
-                
-                <!-- Commercial Projects -->
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="commercial">
-                    <img src="images/commercial-roofing-orange.jpg" alt="Commercial roofing project" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Commercial Roofing</h5>
-                        <p>Orange County - Business roofing solution</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="commercial">
-                    <img src="images/commercial-roofing-seminole.jpg" alt="Seminole commercial roof" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Seminole Commercial Roof</h5>
-                        <p>Seminole County - Professional installation</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="commercial">
-                    <img src="images/commercial-post-67-new-roof.jpg" alt="New commercial roof" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>New Commercial Roof</h5>
-                        <p>Central Florida - Complete roof replacement</p>
-                    </div>
-                </div>
-                
-                <!-- TPO and Specialized -->
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="commercial">
-                    <img src="images/tpo-roof.jpg" alt="TPO roofing system" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>TPO Roofing System</h5>
-                        <p>Central Florida - Single-ply membrane</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="residential">
-                    <img src="images/residential-tpo-pool-house.jpg" alt="Pool house TPO roof" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Pool House TPO Roof</h5>
-                        <p>Central Florida - Specialized installation</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="residential">
-                    <img src="images/custom-roof.jpg" alt="Custom roofing project" class="gallery-image">
-                    <div class="gallery-caption">
-                        <h5>Custom Roofing Design</h5>
-                        <p>Central Florida - Unique architectural solution</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- CTA Section -->
-        <div class="container my-5 text-center">
-            <h3>Ready to Start Your Project?</h3>
-            <p>Contact us to discuss your roofing project and get started.</p>
-            <a href="contact.html" class="btn btn-primary btn-lg">Call to Discuss Your Project</a>
         </div>
     </main>
 
@@ -223,30 +149,17 @@
 
     <!-- Bootstrap JS CDN (for nav toggle) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <!-- Gallery Filter Script -->
+    <!-- Gallery Swap Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    // Add active class to clicked button
-                    this.classList.add('active');
-                    
-                    const filter = this.getAttribute('data-filter');
-                    
-                    galleryItems.forEach(item => {
-                        if (filter === 'all' || item.getAttribute('data-category').includes(filter)) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
+        document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const hero = document.getElementById('heroImage');
+                hero.classList.add('fade');
+                setTimeout(() => {
+                    hero.src = thumb.dataset.fullsrc;
+                    hero.alt = thumb.alt;
+                    hero.classList.remove('fade');
+                }, 300);
             });
         });
     </script>

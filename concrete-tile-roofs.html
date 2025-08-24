@@ -13,9 +13,29 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon.ico">
+    
     <style>
+        body { background-color: #f8f9fa; color: #333; }
+        .navbar { background-color: #f8f9fa; border-bottom: 1px solid #0256b9; }
+        a { color: #0256b9; }
+        .btn-primary { 
+            background-color: #0256b9; 
+            border-color: #0256b9; 
+            color: #ffffff; 
+        }
+        .btn-primary:hover { 
+            background-color: #1a4a8f; 
+            border-color: #1a4a8f; 
+            color: #ffffff; 
+        }
+        .card { border: 1px solid #0256b9; }
+        footer { background-color: #f8f9fa; border-top: 1px solid #0256b9; }
         .gallery-thumb {
-            max-width: 120px;
+            max-width: 120px; /* Reduced for tighter fit */
             max-height: 80px;
             width: 100%;
             height: auto;
@@ -52,12 +72,12 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="shingle-roofs.html">Shingle Roofs</a></li>
-                            <li><a class="dropdown-item active" href="tile-roofs.html">Tile Roofs</a></li>
+                            <li><a class="dropdown-item" href="tile-roofs.html">Tile Roofs</a></li>
                             <li><a class="dropdown-item" href="metal-roofs.html">Metal Roofs</a></li>
                             <li><a class="dropdown-item" href="flat-low-slope.html">Flat & Low-Slope (BUR)</a></li>
                             <li><a class="dropdown-item" href="tpo-roofs.html">TPO Single-Ply</a></li>
@@ -70,7 +90,6 @@
                     <li class="nav-item"><a class="nav-link" href="residential.html">Residential</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="roofing-guides.html">Roofing Guides</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="contact.html">Contact</a></li>
                 </ul>
             </div>

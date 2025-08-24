@@ -17,13 +17,79 @@ body {
     background-color: #1a4a8f;
     border-color: #1a4a8f;
 }
-/* Remove the translate/left hacks as suggested */
+/* Hero image styling for high-resolution images */
 .hero-bleed {
     min-height: 50vh;                       /* Taller on desktops */
-    background-image: url('../images/mbr-roofing-hero.jpg'); /* Relative path for local testing */
+    background-image: url('../images/mbr-roofing-hero.png');  /* Relative path for local testing */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Fix for hero images in subpages - allow full image display */
+.hero-section img {
+    width: 100%;
+    height: auto !important; /* Let height adjust naturally - override inline styles */
+    max-height: 60vh !important; /* Give it some reasonable height while keeping full image */
+    object-fit: contain !important; /* Show full image instead of cropping - override inline styles */
+}
+
+/* Ensure hero section doesn't constrain the image */
+.hero-section {
+    margin: 0;
+    padding: 0;
+    overflow: visible; /* Allow image to display fully */
+}
+
+/* Override any inline max-height constraints */
+#heroImage {
+    max-height: 60vh !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+/* Mobile-first approach: focus on center content, eliminate borders */
+@media (max-width: 767px) {
+    .hero-section img {
+        object-fit: cover !important; /* Crop to fill container on mobile */
+        object-position: center !important; /* Focus on center/middle of image */
+        max-height: 40vh !important; /* Slightly shorter on mobile */
+    }
+    
+    #heroImage {
+        object-fit: cover !important;
+        object-position: center !important;
+        max-height: 40vh !important;
+    }
+    
+    /* Override ALL inline styles for mobile */
+    .hero-section img[style*="max-height: 300px"] {
+        max-height: 40vh !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-section img {
+        object-fit: cover !important;
+        object-position: center !important;
+        max-height: 50vh !important;
+    }
+    
+    #heroImage {
+        object-fit: cover !important;
+        object-position: center !important;
+        max-height: 50vh !important;
+    }
+    
+    /* Override ALL inline styles for tablet */
+    .hero-section img[style*="max-height: 300px"] {
+        max-height: 50vh !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
 }
 
 
